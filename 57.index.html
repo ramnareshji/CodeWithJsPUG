@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Events</title>
+</head>
+<style>
+    #btn {
+        padding: 10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit 
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+    <div class="container">
+        <h1>This is my heading </h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut rem quidem quaerat eos minima, neque
+            mus suscipit ex maiores commodi. Ipsum quisquam quo ab modi vitae animi eaque!</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+
+    <!-- here is my practise -->
+
+    <div class="paragraph">
+        <p id="parabhai">This will hide and see game </p>
+    </div>
+    <button id="btnbhai" onclick="chupjabhai()"> hide/see</button>
+
+
+
+
+
+
+
+
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            console.log('Mouse Inside')
+        });
+
+        para.addEventListener('mouseout', function run() {
+            console.log('Mouse now went outside')
+        });
+
+
+        function toggleHide() {
+            // let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+
+        }
+
+        //  Here is my practise ...........not to do ==>1. Kabhi document bhul mat jana pata chale sida getElementById use kar rhe ho
+        //         syntax should be same and id sahi jagah pr sahi do
+
+
+
+           let a = document.getElementById('parabhai');
+           a.addEventListener('mouseover', function n(){
+            console.log("mouse is over btnbhai");
+
+           });
+
+           
+        function chupjabhai() {
+     
+            let parabhai = document.getElementById('parabhai');
+            if (parabhai.style.display != 'none') {
+                parabhai.style.display = 'none';
+            }
+            else{
+               parabhai.style.display = 'block';
+            }
+        }
+
+           
+        
+    </script>
+
+
+
+
+</body>
+
+</html>

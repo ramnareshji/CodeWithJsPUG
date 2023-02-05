@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow Functions</title>
+</head>
+
+<body>
+    <div class="container">
+        This is arrow functions tutorial.
+        <span id="likho"></span>
+    </div>
+    <script>
+        // Arrow function
+        // let greet =  ()=> {
+        //     console.log('Good morning');
+        // }
+
+        let greet = () => console.log('Good morning');
+
+
+        // let sum2 = (a, b)=>{
+        //     return a+b;
+        // };
+
+        let sum2 = (a, b) => a + b;
+        let half = a => a / 2;
+
+        // function greet() {
+        //     console.log('Good morning');
+        // }
+
+        greet();
+        setTimeout(() => {
+            console.log("We are inside settimeout");
+        }, 3000);
+
+        let obj1 = {
+            greeting: "Good Morning",
+            names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log(this.greeting + " Kukdoo Koo " + student);
+                });
+            }
+        }
+        obj1.speak();
+
+
+        // Here i am practising to create an Array 
+
+       
+
+        
+
+        // doubt solved by chatgtp to run multiple array , don't forget to use this. and workingCode(); ki jagah workingCode.bol();
+        let workingCode = {
+            ok: " is a student ",
+            naam: ["naresh", "kalam", "salam", "ram"],
+            books: ["history", "maths", "sci", "Gk"],
+            habits: ["lazy", "", "hero", "gentleman"],
+            bol() {
+                for (let i = 0; i < this.naam.length; i++) {
+                    console.log(this.naam[i] + this.ok + " of " + this.books[i] + " and he is a " + this.habits[i]);
+                }
+            }
+        }
+        workingCode.bol();
+
+        //  this is the another way of writting this code in different way using Function
+
+        function classFive() {
+            let a = {
+                names: ["a", "b"],
+                aFunction() {
+                    for (let i = 0; i < this.names.length; i++) {
+                        console.log("This is " + this.names[i]);
+                    }
+                }
+            };
+            a.aFunction();
+        }
+        classFive();
+
+       
+
+
+    </script>
+</body>
+
+</html>

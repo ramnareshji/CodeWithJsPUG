@@ -1,0 +1,45 @@
+
+
+               /* ye kaam nahi kar rha tha nodejs me esliy html file me hi style dal diya */
+
+*{margin: 0px;
+padding: 0px;}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.container ul{
+   display:flex;
+   flex: content;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   background-color: rgba(14, 168, 14, 0.59);
+   margin-top: 4px;
+   color: rgb(37, 37, 154);
+
+}
+.container ul li{
+    list-style: none;
+    margin-left: 1rem;
+    margin-top: 1px;
+    font-size: large;
+    
+   
+}
+
+.container ul li a{
+   text-decoration: none;
+   text-justify: auto;
+   margin: 15px;
+   
+}
+.container ul li :hover{
+    list-style: none;
+    margin-left: 1rem;
+    margin-top: 1px;
+    font-size:larger;
+    background-color: rgb(236, 228, 217);
+    margin-bottom: 5px;
+}
